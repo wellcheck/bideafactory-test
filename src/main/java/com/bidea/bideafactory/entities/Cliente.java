@@ -13,20 +13,28 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column(name = "name")
     private String name;
 
+    @Column(name = "lastName")
     private String lastName;
 
+    @Column(name = "age")
     private int age;
 
+    @Column(name = "phoneNumber")
     private String phoneNumber;
 
+    @Column(name = "starDate")
     private Date starDate;
 
+    @Column(name = "endDate")
     private Date endDate;
 
+    @Column(name = "houseId")
     private Long houseId;
 
+    @Column(name = "discountCode")
     private String discountCode;
 
     public Cliente() {
