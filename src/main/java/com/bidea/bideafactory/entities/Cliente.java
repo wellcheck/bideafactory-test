@@ -54,42 +54,13 @@ public class Cliente {
         this.discountCode = discountCode;
     }
 
-    public Cliente(CLienteDTO cLienteDTO) {
-        this.name = cLienteDTO.getName();
-        this.lastName = cLienteDTO.getLastName();
-        this.age = cLienteDTO.getAge();
-        this.phoneNumber = cLienteDTO.getPhoneNumber();
-        this.starDate = cLienteDTO.getStarDate();
-        this.endDate = cLienteDTO.getEndDate();
-        this.houseId = cLienteDTO.getHouseId();
-        this.discountCode = cLienteDTO.getDiscountCode();
-    }
 
-    public void atualizar(Cliente cliente){
-        if(cliente.getName() != null){
-            this.name = cliente.getName();
-        }
-        if(cliente.getName() != null){
-            this.lastName = cliente.getLastName();
-        }
-        if(cliente.getName() != null){
-            this.age = cliente.getAge();
-        }
-        if(cliente.getName() != null){
-            this.phoneNumber = cliente.getPhoneNumber();
-        }
-        if(cliente.getName() != null){
-            this.starDate = cliente.getStarDate();
-        }
-        if(cliente.getName() != null){
-            this.endDate = cliente.getEndDate();
-        }
-        if(cliente.getName() != null){
-            this.houseId = cliente.getHouseId();
-        }
-        if(cliente.getName() != null){
-            this.discountCode = cliente.getDiscountCode();
-        }
+    public void atualizar(Long id, Date starDate, Date endDate, Long houseId, String discountCode){
+        this.id = id;
+        this.starDate = starDate;
+        this.endDate = endDate;
+        this.houseId = houseId;
+        this.discountCode = discountCode;
     }
 
     public Long getId() {
