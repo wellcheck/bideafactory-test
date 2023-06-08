@@ -1,15 +1,11 @@
 package com.bidea.bideafactory.controller;
 
-import com.bidea.bideafactory.dto.CLienteDTO;
+
 import com.bidea.bideafactory.entities.Cliente;
 import com.bidea.bideafactory.repository.ClienteRepository;
 import com.bidea.bideafactory.service.ClienteService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 
 @RestController
@@ -33,7 +29,6 @@ public class ClienteController {
        return clienteRepository.findAll();
 
     }
-
 
     @DeleteMapping("/{id}")
     public List<Cliente> deletar(@PathVariable Long id){

@@ -1,14 +1,12 @@
 package com.bidea.bideafactory.controller;
 
-import com.bidea.bideafactory.dto.ReservaDTO;
+
 import com.bidea.bideafactory.entities.Cliente;
 import com.bidea.bideafactory.repository.ClienteRepository;
 import com.bidea.bideafactory.service.ReservaService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.Date;
 import java.util.List;
 
 @RestController

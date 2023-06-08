@@ -1,10 +1,8 @@
 package com.bidea.bideafactory.entities;
 
-import com.bidea.bideafactory.dto.CLienteDTO;
-import jakarta.persistence.*;
 
+import jakarta.persistence.*;
 import java.util.Date;
-import java.util.List;
 import java.util.Objects;
 
 @Entity
