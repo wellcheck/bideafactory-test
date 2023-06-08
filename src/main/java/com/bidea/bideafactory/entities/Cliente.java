@@ -1,8 +1,10 @@
 package com.bidea.bideafactory.entities;
 
+import com.bidea.bideafactory.dto.CLienteDTO;
 import jakarta.persistence.*;
 
 import java.util.Date;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -50,6 +52,44 @@ public class Cliente {
         this.endDate = endDate;
         this.houseId = houseId;
         this.discountCode = discountCode;
+    }
+
+    public Cliente(CLienteDTO cLienteDTO) {
+        this.name = cLienteDTO.getName();
+        this.lastName = cLienteDTO.getLastName();
+        this.age = cLienteDTO.getAge();
+        this.phoneNumber = cLienteDTO.getPhoneNumber();
+        this.starDate = cLienteDTO.getStarDate();
+        this.endDate = cLienteDTO.getEndDate();
+        this.houseId = cLienteDTO.getHouseId();
+        this.discountCode = cLienteDTO.getDiscountCode();
+    }
+
+    public void atualizar(Cliente cliente){
+        if(cliente.getName() != null){
+            this.name = cliente.getName();
+        }
+        if(cliente.getName() != null){
+            this.lastName = cliente.getLastName();
+        }
+        if(cliente.getName() != null){
+            this.age = cliente.getAge();
+        }
+        if(cliente.getName() != null){
+            this.phoneNumber = cliente.getPhoneNumber();
+        }
+        if(cliente.getName() != null){
+            this.starDate = cliente.getStarDate();
+        }
+        if(cliente.getName() != null){
+            this.endDate = cliente.getEndDate();
+        }
+        if(cliente.getName() != null){
+            this.houseId = cliente.getHouseId();
+        }
+        if(cliente.getName() != null){
+            this.discountCode = cliente.getDiscountCode();
+        }
     }
 
     public Long getId() {
