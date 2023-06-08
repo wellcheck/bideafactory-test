@@ -7,11 +7,11 @@
 validar o referido pedido, se for indicado um código de desconto, validá-lo através de um api rest.*
 </h5>
 
-<list>
+<table>
 - Java 17
 - Spring Framework
 - Postgres
-</list>
+</table>
 
 
 
