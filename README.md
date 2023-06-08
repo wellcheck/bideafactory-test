@@ -8,9 +8,16 @@ validar o referido pedido, se for indicado um código de desconto, validá-lo at
 </h5>
 
 <table>
-- Java 17
-- Spring Framework
-- Postgres
+  <tr>
+    <td>Java</td>
+    <td>Spring Framework</td>
+    <td>Postgres</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>3.02</td>
+    <td>15</td>
+  </tr>
 </table>
 
 
